@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium;
@@ -22,16 +22,19 @@ namespace UnitTestProject1
             driverFF.FindElement(By.Id("lst-ib")).SendKeys("Selenium");
             driverFF.FindElement(By.Id("lst-ib")).SendKeys(Keys.Enter);
 
+            //driverFF.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(5));
             Thread.Sleep(5000);
 
+            //WebDriverWait wait = new WebDriverWait(driverFF, TimeSpan.FromSeconds(10));
+            //wait.Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(By.LinkText("Selenium - Web Browser Automation")));
+            
             driverFF.Navigate().GoToUrl("http://www.google.com");
         }
 
         [TestMethod]
         public void TestChromeDriver()
         {
-            /* TODO: Include here your ChromeDriver directory */
-            driverGC = new ChromeDriver(@"C:\Users\mtdias\");
+            driverGC = new ChromeDriver(@"C:\Users\mtdias\Documents\Treinamento TESTES - SENAC RS");
             driverGC.Navigate().GoToUrl("http://www.google.com");
             driverGC.FindElement(By.Id("lst-ib")).SendKeys("Selenium");
             driverGC.FindElement(By.Id("lst-ib")).SendKeys(Keys.Enter);

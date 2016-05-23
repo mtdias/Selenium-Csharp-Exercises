@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
@@ -25,6 +25,7 @@ namespace UnitTestProject1
             
             WebDriverWait wait = new WebDriverWait(driverFF, TimeSpan.FromSeconds(5));
             wait.Until(ExpectedConditions.TextToBePresentInElementValue(By.Id("rua"), "Avenida: Paulista"));
+            //wait.Until(ExpectedConditions.TextToBePresentInElementValue(By.Id("bairro"), ""));
             
             Assert.AreEqual("Avenida: Paulista", driverFF.FindElement(By.Id("rua")).GetAttribute("value"));
             Assert.AreEqual("Bela Vista", driverFF.FindElement(By.Id("bairro")).GetAttribute("value"));
