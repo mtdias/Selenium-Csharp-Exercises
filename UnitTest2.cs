@@ -15,7 +15,7 @@ namespace UnitTestProject1
         [TestMethod]
         public void desafio2()
         {
-            String nome = "SENAC";
+            String nome = "Mateus";
             String email = "teste@teste.com.br";
             String telefone = "51 9999 9999";
 
