@@ -1,6 +1,6 @@
 # Selenium-Exercises-Csharp
 
-# Selenium Learning Repository
+Selenium Learning Repository
 
 ## Overview
 This repository is dedicated to learning and experimenting with Selenium WebDriver in C#. It contains various test scripts that demonstrate the usage of Selenium for web automation and testing purposes. The focus is on practical learning and experimentation, making this repository ideal for those new to Selenium or looking to enhance their skills.
