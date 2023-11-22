@@ -34,7 +34,7 @@ namespace UnitTestProject1
         [TestMethod]
         public void TestChromeDriver()
         {
-            driverGC = new ChromeDriver(@"C:\Users\mtdias\Documents\Treinamento TESTES - SENAC RS");
+            driverGC = new ChromeDriver({{path_to_chrome_driver}});
             driverGC.Navigate().GoToUrl("http://www.google.com");
             driverGC.FindElement(By.Id("lst-ib")).SendKeys("Selenium");
             driverGC.FindElement(By.Id("lst-ib")).SendKeys(Keys.Enter);
